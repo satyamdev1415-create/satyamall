@@ -104,7 +104,6 @@ pydantic_core==2.41.5
 Pygments==2.19.2
 PyJWT==2.12.1
 pyparsing==3.2.5
-pypiwin32==223
 PySocks==1.7.1
 python-dateutil==2.9.0.post0
 python-discovery==1.1.3
