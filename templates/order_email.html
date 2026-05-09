@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<body style="font-family: Arial; background:#f4f4f4; padding:20px;">
+
+<div style="background:white; padding:20px; border-radius:10px;">
+
+<h2 style="color:green;">🛒 New Order Received</h2>
+
+<p><strong>User:</strong> {{ user.username }}</p>
+
+<p><strong>Address:</strong> {{ address }}</p>
+
+<p><strong>Payment:</strong> {{ payment }}</p>
+
+<p><strong>Total Amount:</strong> ₹{{ total }}</p>
+
+<hr>
+
+<h3>Products:</h3>
+
+<ul>
+{% for product in products %}
+    <li>
+        {{ product.name }} - Qty: {{ product.quantity }}
+    </li>
+{% endfor %}
+</ul>
+
+</div>
+
+</body>
+</html>
