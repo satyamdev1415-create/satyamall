@@ -18,7 +18,7 @@ urlpatterns = [
 
     path('success/',views.order_success,name="success"),
 
-    path('wishlist/<int:id>/',views.add_to_wishlist,name="wishlist"),
+    path('wishlist/<int:id>/',views.add_to_wishlist,name="wishlist")
 
-    path('make-admin/', views.create_admin)
+   
 ]

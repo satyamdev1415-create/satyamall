@@ -11,18 +11,6 @@ from django.conf import settings
 from django.db.models import Q
 import razorpay
 from django.conf import settings
-from django.contrib.auth.models import User
-def create_admin(request):
-
-    if not User.objects.filter(username='admin').exists():
-
-        User.objects.create_superuser(
-            'admin',
-            'admin@gmail.com',
-            'admin123'
-        )
-
-    return HttpResponse("admin created")
 
 @login_required(login_url='/login/')
 def home(request):
